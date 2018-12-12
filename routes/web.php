@@ -22,6 +22,10 @@ Route::get('/', function () {
 Route::resource('/order', 'OrderController');
 
 
+// Paytm callback url route
+Route::post('/paytm-callback', 'OrderController@paytmCallback');
+
+
 
 
 

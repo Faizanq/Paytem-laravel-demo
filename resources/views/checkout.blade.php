@@ -9,11 +9,11 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-6">
-					<form action="{{url('/orders')}}" method="POST">
+					<form action="{{url('/order')}}" method="POST">
 					  	{{csrf_field()}}
 					    <div class="form-group">
 					      <label for="price">Price</label>
-					      <input type="text" class="form-control" id="price" aria-describedby="priceHelp" placeholder="Enter email">
+					      <input type="text" class="form-control" id="price" aria-describedby="priceHelp" placeholder="Enter Price" name="price">
 				    <button type="submit" class="btn btn-primary">Submit</button>
 					</form>
 				</div>
